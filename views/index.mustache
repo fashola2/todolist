@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="/" method="post">
+      <div class="">
+        <input type="text" name="todo" value="" placeholder="What do you have to do?">
+        <input type="submit" name="submit" value="Add ToDo" placeholder="Submit">
+      </div>
+</form>
+    <form class="" action="/complete" method="post">
+
+
+      <div class="letgo">
+          {{#todos}}
+          <button type="submit" name="button" value="{{.}}">Mark Complete</button>
+          <h4>{{.}}</h4>
+          {{/todos}}
+</form>
+      </div>
+
+
+      <div class="gogo">
+          <h3>Completed task</h3>
+          {{#complete}}
+          <h4>{{.}}</h4>
+          {{/complete}}
+      </div>
+
+  </body>
+</html>
